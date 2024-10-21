@@ -1,0 +1,425 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% ARAFAT AMAN ALim (https://dev-arafat.netlify.app/)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+
+% \usepackage[a4paper, margin=0.75in, top=1in, bottom=1.5in, height=35in]{geometry}
+\usepackage[a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,]{geometry}
+
+% \usepackage[legalpaper, margin=0.5in, top=0in, bottom=0in]{geometry}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Arafat Aman}{Alim}{
+Full Stack Developer | MERN | Software Developer \\
+\color{linksColor}\urlstyle{same}\href{https://dev-arafat.netlify.app}{\faGlobe\ dev-arafat-alim.com} | 
+\href{mailto:arafat.aman.alim@gmail.com}{\faEnvelope\ arafat.aman.alim@gmail.com} | 
+\href{tel:+918282985207}{\faPhone\ 828.298.5207}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{1.0\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+% \subsection{Programming}
+% \location{Over 5000 lines:}
+% Java \textbullet{}   Shell \textbullet{} Python \textbullet{} Javascript \\
+% OCaml \textbullet{} Matlab \textbullet{} Rails \textbullet{} \LaTeX\ \\ 
+% \location{Over 1000 lines:}
+% C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
+% \location{Familiar:}
+% AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
+% \sectionsep
+
+% \runsubsectionDesc{Frontend | }
+\large\textbf{Frontend - }
+\textbullet{} ReactJS 
+\textbullet{} NextJS
+\textbullet{} Redux
+\textbullet{} Tailwind CSS
+\textbullet{} CSS
+\textbullet{} HTML
+\\
+% \runsubsectionDesc{Backend | }
+\large\textbf{Backend - }
+\textbullet{} Node JS
+\textbullet{} ExpressJS
+\textbullet{} JWT
+\textbullet{} RESTFUL APIs
+\textbullet{} Clerk
+\\
+% \runsubsectionDesc{Cross Platform Mobile | }
+\large\textbf{Cross Platform Mobile - }
+React Native 
+\textbullet{} Android
+\textbullet{} IOS
+\\
+% \runsubsectionDesc{Databases | }
+\large\textbf{Database - }
+\textbullet{} Postgres SQL
+\textbullet{} Neon DB
+\textbullet{} Mongo DB 
+\\
+% \runsubsectionDesc{CI/CD | }
+\large\textbf{Version Control Systems - }
+GIT
+\textbullet{} Github
+\\
+\large\textbf{CI/CD - }
+\textbullet{} Github Actions
+\textbullet{} Jenkins
+\\
+% \ProgrammingParadimg{PP. | }
+\large\textbf{Programming Paradigms - }
+\textbullet{} Object Oriented Programming
+\textbullet{} Functional Programming
+\\
+\large\textbf{CI/CD - }
+\textbullet{} Github Actions
+\textbullet{} Jenkins
+\\
+% \runsubsectionDesc{Misc. | }
+\large\textbf{Misc - }
+\textbullet{} AWS (EC2, ECS, Lambda, EventBridge, Amplify)
+\textbullet{} Sentry
+\textbullet{} API Integration
+\textbullet{} Data Analytics Tool - Retool
+\textbullet{} Turborepo
+\textbullet{} Agile
+\\
+\large\textbf{Soft Skills - }
+\textbullet{} Leadership
+\textbullet{} Writing
+\textbullet{} Team Player
+\textbullet{} Deliver Result
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Betalectic IT Pvt Ltd}
+\descript{| Full Stack Developer }
+\location{Mar 2023 - May 2024 | India, HYD | Onsite}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+
+% \begin{tightemize}
+
+% \item \textbf{Wiredup} \hfill \textit{Apr 2023 - May 2024}
+% \begin{itemize}
+%     \item Developed a full-stack web application using React and Node.js, enhancing user experience by 30%.
+% \end{itemize}
+
+% \item \textbf{Finezzy} \hfill \textit{May 2023 - Apr 2024}
+% \begin{itemize}
+%     \item Led the backend development using Express.js and MongoDB, improving database query efficiency.
+% \end{itemize}
+
+% \item \textbf{Auction Bazaar} \hfill \textit{Mar 2023 - May 2023}
+% \begin{itemize}
+%     \item Developed a scalable auction platform using Next.js and PostgreSQL, handling over 10,000 users simultaneously.
+% \end{itemize}
+
+% \end{tightemize}
+\begin{itemize}
+    \item Developed and maintained core features for the \textbf{Finezzy Mobile App}, enhancing app performance and resolving critical bugs, contributing to a smoother and more reliable user experience.
+    \item Collaborated with \textbf{Support and Product teams} to provide full-time \textbf{technical support} for users during their loan journeys, troubleshooting issues and ensuring a seamless process.
+    \item Built and deployed a \textbf{data visualization tool} and automated daily reporting workflows using \textbf{AWS Lambda} and \textbf{Event Bridge}, improving report generation efficiency.
+    \item Led development for key projects, including \textbf{Radical}, \textbf{Auction Bazaar}, and \textbf{Wired-up}, optimizing both web and mobile applications by implementing on-demand features and enhancing mobile responsiveness.
+    \item Spearheaded performance enhancements leading to \textbf{700+ loan disbursements} totaling \textbf{Rs.12 Cr+} within 7 months, streamlining the loan approval process and boosting user satisfaction.
+    \item Optimized \textbf{Postgres queries} and resolved API issues, significantly reducing system errors and enhancing stability across various platforms.
+\end{itemize}
+
+\sectionsep
+
+
+\runsubsection{Genpact India}
+\descript{| Senior Associate | Developer }
+\location{December 2021 –  July 2022 | India, HYD | Remote}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{itemize}
+    \item Contributed to the development of the \textbf{\underline{Asset Management System}}, focusing on building responsive and dynamic front-end components using \textbf{\underline{HTML5}}, \textbf{\underline{CSS3}}, and \textbf{\underline{Bootstrap 4}}.
+    \item Collaborated with cross-functional teams to integrate front-end features with \textbf{\underline{.NET Core}} and a \textbf{\underline{MySQL}} database, ensuring a seamless user experience and efficient data handling.
+    \item Worked closely with project stakeholders to gather and implement \textbf{\underline{UI/UX requirements}}, enhancing usability and visual appeal while maintaining corporate standards.
+    \item Ensured high levels of confidentiality during development, safeguarding sensitive project information and corporate data in line with company protocols.
+    \item Played a key role in delivering a \textbf{\underline{user-friendly}}, scalable asset management platform that improved asset tracking and operational efficiency for the organization.
+\end{itemize}
+\sectionsep
+
+% \runsubsection{Newton School}
+% \descript{| Full Stack Developer Intern }
+% \location{May 2013 – Aug 2013 | India, KOL}
+% \begin{tightemize}
+% \item Worked on the YouTube Captions team, in Javascript and Python to plan, to design and develop the full stack to add and edit Automatic Speech Recognition captions. In production.
+% \item Created a backbone.js-like framework for the Captions editor.
+% \end{tightemize}
+% \sectionsep
+
+% \runsubsection{Phabricator}
+% \descript{| Open Source Contributor \& Team Leader}
+% \location{Jan 2013 – May 2013 | Palo Alto, CA \& Ithaca, NY}
+% \begin{tightemize}
+% \item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.
+% \item I created the Meme generator and more in PHP and Shell.
+% \item Led a team from MIT, Cornell, IC London and UHelsinki for the project.
+% \end{tightemize}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Research}
+% \runsubsection{Cornell Robot Learning Lab}
+% \descript{| Researcher}
+% \location{Jan 2014 – Jan 2015 | Ithaca, NY}
+% Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
+% \sectionsep
+
+% \runsubsection{Cornell Phonetics Lab}
+% \descript{| Head Undergraduate Researcher}
+% \location{Mar 2012 – May 2013 | Ithaca, NY}
+% Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2014	     & top 52/2500  & KPCB Engineering Fellow\\
+% 2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+% 2013	     & National  & Jump Trading Challenge Finalist\\
+% 2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+% 2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+% 2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{1.0\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Education}
+
+% \vspace{0.5em} % adds space before the table
+
+% \begin{tabular}{|p{0.6\textwidth}|p{0.4\textwidth}|}
+% \hline
+% \multicolumn{1}{|c|}{\textbf{Institution}} & \multicolumn{1}{|c|}{\textbf{Details}} \\ 
+% \hline
+% \textbf{Budge Budge Institute of Technology} & B.Tech in Computer Science and Engineering \\ 
+% & Year: 2020, India, WB \\ 
+% & CGPA: 7.68 / 10.0 \\ 
+% \hline
+% \textbf{Cathedral Mission High School} & XII (WBCHSE) \\ 
+% & Year: 2012 \\ 
+% & Percentage: 66.2 \\ 
+% \hline
+% \end{tabular}
+
+% \vspace{1em} % adds space after the table
+
+\section{EDUCATION}
+\runsubsection{Budge Budge Institute of Technology}
+\descript{| Bachelor in Computer Science and Engineering}
+\location{CGPA - 7.85 | July 2016 – September 2020 | India, WB}
+\vspace{0.2em}
+\textbf{Coursework:}
+\textbullet{} Operating Systems
+\textbullet{} Data Structures, 
+\textbullet{} Analysis Of Algorithms, 
+\textbullet{} Networking, 
+\textbullet{} Database Management System 
+
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+% Facebook:// \href{https://facebook/dd}{\bf dd} \\
+% Contact-Me:// \href{https://dev-arafat.netlify.app/#contact}{\faAddressCard\ \bf dev-arafat-alim} \\
+% Github:// \href{https://github.com/arafat-alim}{\faGithub\ \bf arafat.alim} \\
+% LinkedIn://  \href{https://www.linkedin.com/in/arafat-alim}{\faLinkedin\ \bf arafat-alim} \\
+
+\href{https://dev-arafat.netlify.app/#contact}{\faComments  \hspace{0.5em} \bf dev-arafat-alim} \\
+\href{https://github.com/arafat-alim}{\faGithub \hspace{0.5em} \bf arafat.alim} \\
+\href{https://www.linkedin.com/in/arafat-alim}{\faLinkedin \hspace{0.5em} \bf arafat-alim} \\
+% YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
+% Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
+% Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+% \subsection{Graduate}
+\textbullet{} Object Oriented Programming \\
+\textbullet{} Data Structure and Algorithm \\
+\textbullet{} Database Management System
+\sectionsep
+
+\subsection{Undergraduate}
+Information Retrieval \\
+Operating Systems \\
+Artificial Intelligence + Practicum \\
+Functional Programming \\
+Computer Graphics + Practicum \\
+{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
+Unix Tools and Scripting \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{PROJECTS}
+\runsubsection{LANDING PAGE - CLOUD HOSTING SITE }
+\descript{\href{https://dev-arafat.netlify.app/#contact}{\faGlobe  \hspace{0.5em}} |\hspace{0.5em} \href{https://dev-arafat.netlify.app/#contact}{\faCode \hspace{0.5em} \faGithub }}
+\location{May 2021 – Jun 2021}
+\vspace{\topsep}
+\begin{tightemize}
+\item Designed and developed a personal website using React, Bootstrap, and CSS.
+\item Implemented responsive design and mobile-first approach.
+\item Deployed on GitHub Pages.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{LANDING PAGE - CLOUD HOSTING SITE }
+\descript{\href{https://dev-arafat.netlify.app/#contact}{\faGlobe  \hspace{0.5em}} |\hspace{0.5em} \href{https://dev-arafat.netlify.app/#contact}{\faCode \hspace{0.5em} \faGithub }}
+\location{May 2021 – Jun 2021}
+% \vspace{\topsep}
+\begin{tightemize}
+\item A \textbf{Landing Page Web App}, the clone of Cloud Hosting Site named \textbf{MOSHIFY}.
+\item \textbf{Feature:} The web app offers a static, user-friendly interface that is fully responsive across all devices.
+\item \textbf{Role:} Frontend | \textbf{Tech Stack:} JavaScript, HTML, CSS.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CERTIFICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{CERTIFICATIONS}
+\runsubsection{Meta}
+\descript{| Front-End Developer Professional Certificate}
+\location{Jan 2014 – Jan 2015 | Ithaca, NY}
+Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
+\sectionsep
+
+\runsubsection{Newton School}
+\descript{| Newton School Coding Bootcamp}
+\location{Mar 2012 – May 2013 | Ithaca, NY}
+Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     FInished
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
